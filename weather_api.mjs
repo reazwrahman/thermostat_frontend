@@ -1,4 +1,4 @@
-const api_key = '8a757115f1d5c68d542ff30473fdf820';
+const api_key = '';
 
  
 async function get_weather_info(latitude, longitude) { 
