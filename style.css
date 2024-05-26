@@ -203,7 +203,8 @@ footer {
     footer {
         font-size: 12px;
     } 
-    .card{ 
+    .card{  
+        margin: 10px;
         max-width: 70vw; 
         word-wrap: break-word;
     }
