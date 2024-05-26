@@ -174,7 +174,7 @@ footer {
     background-color: rgb(7, 30, 12);
     color: #ffffff;
     padding: 20px;
-    margin-top: 700px; /* Pushes the footer to the bottom of the page */ 
+    margin-top: auto; /* Pushes the footer to the bottom of the page */ 
     font-size: 20px; 
     justify-content: center; 
 } 
