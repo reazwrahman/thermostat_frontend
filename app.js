@@ -11,7 +11,7 @@ import { get_health,get_device_state } from "./backend_api.mjs";
     console.error("Geolocation is not supported by this browser.");
 }*/ 
 
-// user static json data (test code, comment it out to use the actual weather api above)
+// uses static json data (test code, comment it out to use the actual weather api above)
 display_weather_card(0,0,true);
 
 //display health data

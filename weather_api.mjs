@@ -1,4 +1,4 @@
-const api_key = '';
+const api_key = ''; // weather map API key goes here
 
  
 async function get_weather_info(latitude, longitude) { 
@@ -55,7 +55,6 @@ function success_call_back(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
  
-    //locationInfo.textContent = `Your location: Latitude: ${latitude}, Longitude: ${longitude}`;
     display_weather_card(latitude, longitude);  
 }
  
