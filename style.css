@@ -130,7 +130,13 @@
 
 .card:focus {
     outline: 2px solid #0d0d0d; /* Change outline color */
-}
+} 
+
+/* Pseudo-elements */
+.card p::selection {
+    background: rgb(4, 225, 26);
+    color: black;
+} 
 
 
 /* Grid style (end) */
@@ -147,6 +153,13 @@
     min-height: 40vh;
     word-wrap: break-word; 
     float: right;
+} 
+
+/* Pseudo-elements */
+.sidebar h3::before {
+    content: '\2022'; /* Bullet character */
+    margin-right: 0.5em; /* Add space between bullet and text */
+    color: #fafafa; /* Bullet color */
 }
 /* sidebar style (end) */
 
