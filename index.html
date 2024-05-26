@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Thermostat</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="./app.js" type="module"> </script> 
+</head> 
+<body>
+    <!-- Nav bar -->
+    <body class="nav-body">
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu-item" tabindex="0">Device Switch</li>
+                <li class="menu-item" tabindex="0">Thermostat
+                <ul class="dropdown">
+                    <li class="dropdown-item">Set Themostat</li>
+                    <li class="dropdown-item">Shut down</li>
+                </ul> 
+            </li>
+                <li class="menu-item" tabindex="0">Power Cycle</li>
+                <li class="menu-item" tabindex="0">Troubleshoot  
+                    <ul class="dropdown">
+                        <li class="dropdown-item">View State Transitions</li>
+                        <li class="dropdown-item">View Current State</li>
+                    </ul>
+                </li> 
+            </ul>
+        </nav>
+    </body>  
+
+    <!-- Grid -->
+    <div class="grid-container"> 
+        <div class="card" id="weather-card" tabindex="0">
+            <h3>Weather Info</h3>
+            <p>Unable to get weather information </p>
+            <p>Make sure to allow location access </p>
+        </div>
+        <div class="card" id="sensor-info-card" tabindex="0">
+            <h3>Sensor Readings</h3>
+            <p>Backend API not available</p>
+        </div>
+        <div class="card" id="device-status-card" tabindex="0">
+            <h3>Device Status</h3>
+            <p>Backend API not available</p>
+        </div>  
+        <div class="card" id="state-history-card" tabindex="0">
+            <h3>State Transition History</h3>
+            <p>Not implemented yet</p>
+        </div>  
+
+    </div> 
+
+    <div class="sidebar" id="health-card">
+        <h2>Backend API</h2>
+        <p>Status: Not Available</p> 
+    </div> 
+    
+
+    <!-- footer -->
+    <footer>
+        <p>© 2024 DIY Thermostat. All rights reserved.</p>
+    </footer> 
+</body>
+</html>

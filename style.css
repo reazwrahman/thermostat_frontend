@@ -1,0 +1,159 @@
+
+/* Nav bar style (start) */
+.nav-body {
+    margin: 0;
+    padding: 0; 
+    font-size: 20px;
+    background: #ffffff; /* Light background for contrast */
+}
+
+.navbar { 
+    background: rgb(7, 30, 12);
+    color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; 
+    font-size: 25px; 
+    font-weight: 70; 
+    font-family: 'Lato', serif;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-item {
+    padding: 20px 30px;
+    position: relative;
+}
+
+.menu-item a {
+    color: #970707;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background: #333;
+} 
+
+.menu-item:focus {
+    outline: 2px solid #8f9b91; /* Change outline color */
+} 
+
+.menu-item:focus .dropdown {
+    display: block;    /* Show dropdown on hover */
+}
+
+
+.menu-item:hover .dropdown {
+    display: block;    /* Show dropdown on hover */
+}
+
+.dropdown {
+    display: none;    /* Hide dropdown by default */
+    position: absolute;
+    left: 0;
+    top: 100%;    /* Position the dropdown right below the menu item */
+    background: rgb(7, 30, 12);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;    /* Ensure a minimum width for dropdown items */
+}
+
+.dropdown-item {
+    padding: 10px;
+    color: #f9f4f4;
+    text-decoration: none;
+    display: block;    /* Dropdown items should take up full width */
+}
+
+.dropdown-item:hover {
+    background: #6a6f6a;    /* Change background on hover */
+}
+
+/* Nav bar style (end) */
+
+/* Grid style (start) */
+.grid-body {
+    background-color: #f5f5f5;  
+    margin: 20px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px; 
+    margin: 50px;
+    padding: 0px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    
+} 
+
+.grid-container div:nth-child(2n) {
+    background-color: #e1dfdf;
+}
+
+
+.card { 
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    min-height: 20vh; 
+    min-width: 250px; 
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.card p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 1em;
+}
+
+.card:focus {
+    outline: 2px solid #0d0d0d; /* Change outline color */
+}
+
+
+/* Grid style (end) */
+
+
+/* sidebar style (start) */
+.sidebar {
+    width: 200px;
+    background-color: #444;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    min-width: 200px; 
+    min-height: 40vh;
+    word-wrap: break-word; 
+    float: right;
+}
+/* sidebar style (end) */
+
+/* footer style (start) */
+footer {
+    background-color: rgb(7, 30, 12);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 700px; /* Pushes the footer to the bottom of the page */
+} 
+
+/* footer style (end) */ 
+
+

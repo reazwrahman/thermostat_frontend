@@ -1,0 +1,12 @@
+{
+    "type": "cors",
+    "url": "http://127.0.0.1:3000/assi_3/static_data/health_data.json",
+    "redirected": false,
+    "status": "Unavailable",
+    "ok": true,
+    "body": {},
+    "bodyUsed": false,
+    "headers": {},
+    "statusText": "N/A",
+    "prototype": {}
+}

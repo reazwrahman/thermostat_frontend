@@ -1,0 +1,13 @@
+{
+    "name": "San Francisco",
+    "main": {
+        "temp": 22,
+        "feels_like": 25,
+        "humidity": 72
+    },
+    "weather": [
+        {
+            "description": "clear sky"
+        }
+    ]
+}
