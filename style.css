@@ -118,7 +118,6 @@ img[src*="logo."]:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
     min-height: 20vh; 
-    min-width: 250px; 
 }
 
 .card h3 {
@@ -203,6 +202,10 @@ footer {
 
     footer {
         font-size: 12px;
+    } 
+    .card{ 
+        max-width: 80vw; 
+        word-wrap: break-word;
     }
     
 }
