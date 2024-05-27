@@ -1,5 +1,5 @@
-const health_url = `http://0.0.0.0/health`
-const device_state_url = `http://0.0.0.0/state`;
+const health_url = `http://192.168.1.37/health`
+const device_state_url = `http://192.168.1.37/state`;
 
 async function get_health(){   
     let response; 
@@ -10,7 +10,7 @@ async function get_health(){
         const body = await response.json();
         response_clone.timestamp = body.timestamp;
     } catch (error) {   
-        console.error(error);
+        console.error('Error fetching health data:', error); 
         response = await fetch("./static_data/health_data.json"); 
         response_clone = await response.json(); 
     } 

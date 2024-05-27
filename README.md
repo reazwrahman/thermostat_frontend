@@ -4,6 +4,11 @@ Instead of creating a page for the portfolio, I have created a page from my prop
 
 I have fulfilled all the requirements asked in the assignment including a flexbox, grids and the styling specifications. However, the content of the page is related to my thermostat project. 
 
+## Instructions 
+- To run this locally using Python, navigate to the root directory on terminal 
+and run ```python3 -m http.server 8000 --bind 0.0.0.0 ``` 
+- Find the site on ```0.0.0.0:8000```
+
 ## Backend API calls 
 
 This assignment is intended to make 3 different API endpoint calls. First one is to the weather map api to get the current weather information. I have stubbed out the call for now, since there is a cap on how many calls I can make within the free tier. I will save those for the term project. 
