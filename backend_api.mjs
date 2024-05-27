@@ -5,10 +5,12 @@ async function get_health(){
     let response; 
     let response_clone;
     try {
-        response = await fetch(health_url); 
-        response_clone = response.clone(); 
-
-    } catch (error) {  
+        response = await fetch(health_url);  
+        response_clone = response.clone();   
+        const body = await response.json();
+        response_clone.timestamp = body.timestamp;
+    } catch (error) {   
+        console.error(error);
         response = await fetch("./static_data/health_data.json"); 
         response_clone = await response.json(); 
     } 
@@ -20,11 +22,11 @@ async function get_health(){
 
 function display_health_data(response){ 
     const health_card = document.getElementById("health-card");  
-
     health_card.innerHTML = `
         <h3>Backend API </h3>  
         <p>Health Status: ${response.statusText}</p> 
-        <p>Status Code: ${response.status}</p> 
+        <p>Status Code: ${response.status}</p>  
+        <p>Last Checked On: ${response.timestamp}</p>
         <p>URL: ${response.url}</p> 
     `;  
 }
@@ -55,6 +57,7 @@ function display_device_data(data){
         <p>Device Status: ${data.device_status}</p> 
         <p>Last Turned ON at: ${data.last_turned_on}</p> 
         <p>Last Turned OFF at: ${data.last_turned_off}</p> 
+        <p>Last Updated On: ${data.timestamp}</p> 
     `;  
 
     const sensor_card = document.getElementById("sensor-info-card");  
