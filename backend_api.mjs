@@ -64,7 +64,8 @@ function display_device_data(data){
 
     sensor_card.innerHTML = `
         <h3>Sensor Readings</h3>  
-        <p>Current Temperature: ${data.last_temperature} ºC</p>  
+        <p>Current Temperature: ${data.last_temperature} ºC</p> 
+        <p>Current Humidity: ${data.last_humidity} %</p>  
         <p>Target Temperature: ${data.target_temperature} ºC</p> 
     `; 
 } 
