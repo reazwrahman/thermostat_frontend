@@ -1,5 +1,9 @@
-const health_url = `http://192.168.1.37/health`
-const device_state_url = `http://192.168.1.37/state`;
+//const health_url = `http://192.168.1.37/health`
+//const device_state_url = `http://192.168.1.37/state`;
+
+// for the raspberry pi 
+const health_url = `http://192.168.1.209:8080/health`
+const device_state_url = `http://192.168.1.209:8080/state`
 
 async function get_health(){   
     let response; 
