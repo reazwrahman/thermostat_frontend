@@ -17,7 +17,7 @@ async function get_weather_info(latitude, longitude) {
     }
 } 
 
-async function display_weather_card(latitude, longitude, use_static_data = False)  
+async function display_weather_card(latitude, longitude, use_static_data = false)  
 {  
     let data;
     const card = document.getElementById("weather-card");
@@ -62,16 +62,16 @@ function error_call_back(error) {
     // Handle potential geolocation errors (from previous examples)
     switch (error.code) {
         case error.PERMISSION_DENIED:
-            locationInfo.textContent = "User denied geolocation permission.";
+            console.log("User denied geolocation permission.");
             break;
         case error.POSITION_UNAVAILABLE:
-            locationInfo.textContent = "Location information unavailable.";
+            console.log("Location information unavailable.");
             break;
         case error.TIMEOUT:
-            locationInfo.textContent = "Geolocation request timed out.";
+            console.log("Geolocation request timed out.");
             break;
         default:
-            locationInfo.textContent = "An unknown error occurred.";
+            console.log("An unknown error occurred.");
             break;
     }
 }
