@@ -108,7 +108,7 @@ img[src*="logo."]:hover {
 } 
 
 .grid-container div:nth-child(2n) {
-    background-color: #e0e0df; 
+    background-color: #fcedc0; 
 }
 
 
