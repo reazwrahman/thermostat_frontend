@@ -1,7 +1,9 @@
 const api_key = ''; // weather map API key goes here
 
+const lat = 40.683961 
+const long = -73.817874
  
-async function get_weather_info(latitude=40.6818927, longitude=-73.8399284) { 
+async function get_weather_info(latitude=lat, longitude=long) { 
     const weather_api_url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${api_key}`;
 
     try {
