@@ -92,23 +92,6 @@ footer {
 
 /* Media query for mobile devices */
 @media (max-width: 600px) {
-    .navbar {
-        font-size: 12px; /* Reduce font size for mobile */
-        flex-direction: row; /* Stack items vertically */
-    }
-
-    .menu {
-        flex-direction: row; /* Stack menu items vertically */
-    }
-
-    .menu-item {
-        padding: 20px 15px; /* Adjust padding for mobile */
-    } 
-
-    .navbar-logo{ 
-        height: 40px; 
-    } 
-
     footer {
         font-size: 12px;
     } 
