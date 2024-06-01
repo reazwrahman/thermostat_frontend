@@ -3,7 +3,7 @@
 
 // for the raspberry pi 
 const health_url = `http://192.168.1.209:8080/health`
-const device_state_url = `http://192.168.1.209:8080/state`
+const device_state_url = `http://192.168.1.209:8080/currentState`
 
 async function get_health(){   
     let response; 
