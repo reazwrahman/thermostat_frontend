@@ -1,0 +1,160 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nav bar style (start) */
+.nav-body {
+    margin: 0;
+    padding: 0; 
+    font-size: 20px;
+    background: #ffffff; /* Light background for contrast */
+}
+
+.navbar { 
+    background: rgb(7, 30, 12);
+    color: #ffffff;
+    padding: 0px 0;
+    display: flex;
+    justify-content: center; 
+    font-size: 20px; 
+    font-weight: 70; 
+    font-family: 'Lato', serif;  
+    width: 100%; /* Ensure navbar extends full width */ 
+    box-sizing: border-box;
+}
+
+.navbar-logo{ 
+    height: 60px;
+} 
+
+/* attribute selector */
+img[src*="logo."]:hover {
+    transform: rotate(90deg); /* Rotate on hover */ 
+    border: 2px solid rgb(19, 89, 0);
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-item {
+    padding: 20px 30px;
+    position: relative;
+}
+
+.menu-item a {
+    color: #970707;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background: #333;
+} 
+
+.menu-item:focus {
+    outline: 2px solid #8f9b91; /* Change outline color */
+} 
+
+.menu-item:focus .dropdown {
+    display: block;    /* Show dropdown on hover */
+}
+
+
+.menu-item:hover .dropdown {
+    display: block;    /* Show dropdown on hover */
+}
+
+.dropdown {
+    display: none;    /* Hide dropdown by default */
+    position: absolute;
+    left: 0;
+    top: 100%;    /* Position the dropdown right below the menu item */
+    background: rgb(7, 30, 12);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;    /* Ensure a minimum width for dropdown items */
+}
+
+.dropdown-item {
+    padding: 10px;
+    color: #f9f4f4;
+    text-decoration: none;
+    display: block;    /* Dropdown items should take up full width */
+}
+
+.dropdown-item:hover {
+    background: #6a6f6a;    /* Change background on hover */
+}
+
+/* Nav bar style (end) */
+
+
+
+/* content (start) */
+
+.container { 
+    margin: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't increase width beyond 100% */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+nav {
+    background-color: #006400; /* Dark Green */
+    padding: 1em;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #011e08; /* Light Orange */
+    color: #ffe2e2; /* Dark Grey */
+}
+tr:nth-child(even) {
+    background-color: #f7f2da; /* Light Green */
+} 
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Light Green */
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+.footer {
+    background-color: #006400; /* Dark Green */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* content (end) */

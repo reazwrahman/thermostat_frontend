@@ -43,7 +43,6 @@ img[src*="logo."]:hover {
 }
 
 .menu-item a {
-    color: #970707;
     text-decoration: none;
 }
 
@@ -80,11 +79,13 @@ img[src*="logo."]:hover {
     padding: 10px;
     color: #f9f4f4;
     text-decoration: none;
-    display: block;    /* Dropdown items should take up full width */
+    display: block;    /* Dropdown items should take up full width */ 
+    text-decoration: none; /* Remove underline on hover */
 }
 
 .dropdown-item:hover {
-    background: #6a6f6a;    /* Change background on hover */
+    background: #6a6f6a;    /* Change background on hover */ 
+    text-decoration: none; /* Remove underline on hover */
 }
 
 /* Nav bar style (end) */

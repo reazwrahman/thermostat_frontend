@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device State Changes</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="./main_state_history.js" type="module"> </script> 
+</head>
+<body> 
+
+    <!-- Nav bar -->
+    <nav class="navbar"> 
+        <a href="../index.html"> <img src="./logo.jpeg" alt="Logo" class="navbar-logo"> </a>
+        <ul class="menu"> 
+            <li class="menu-item" tabindex="0">Device Switch</li>
+            <li class="menu-item" tabindex="0">Thermostat
+            <ul class="dropdown">
+                <li class="dropdown-item">Set Themostat</li>
+                <li class="dropdown-item">Shut down</li>
+            </ul> 
+        </li>
+            <li class="menu-item" tabindex="0">Power Cycle</li>
+            <li class="menu-item" tabindex="0">Troubleshoot  
+                <ul class="dropdown">
+                    <li class="dropdown-item">State Transitions</li>
+                    <li class="dropdown-item">Current State</li>
+                </ul>
+            </li> 
+        </ul>
+    </nav> 
+    <!-- Nav bar end --> 
+
+    <div class="container"> 
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>State Change</th>
+                    <th>State Change Cause</th>
+                    <th>Effective Temperature</th>
+                    <th>Target Temperature</th>
+                    <th>Last Turned On</th>
+                    <th>Last Turned Off</th>
+                    <th>Current Timestamp</th>
+                    <th>On for Minutes</th>
+                    <th>Off for Minutes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here by JavaScript -->
+            </tbody>
+        </table> 
+    </div>
+
+</body>
+</html>
