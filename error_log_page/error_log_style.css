@@ -133,14 +133,14 @@ th, td {
 }
 th {
     background-color: #011e08; /* Light Orange */
-    color: #ffe2e2; /* Dark Grey */
+    color: #ffffff; /* Dark Grey */
 }
 tr:nth-child(even) {
-    background-color: #d6efd0; /* Light Green */
+    background-color: #ffd8d8; /* Light Green */
 } 
 
 tr:nth-child(odd) {
-    background-color: #ffffff; /* Light Green */
+    background-color: #ffd8d8; /* Light Green */
 }
 
 tr:hover {

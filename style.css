@@ -78,8 +78,7 @@ img[src*="logo."]:hover {
 .dropdown-item {
     padding: 10px;
     color: #f9f4f4;
-    text-decoration: none;
-    display: block;    /* Dropdown items should take up full width */ 
+    display: block;    /* Dropdown items should take up full width */  
     text-decoration: none; /* Remove underline on hover */
 }
 
@@ -108,7 +107,7 @@ img[src*="logo."]:hover {
     
 } 
 
-.grid-container div:nth-child(2) {
+.grid-container div:nth-child(2n) {
     background-color: #ffeacf; 
 }
 

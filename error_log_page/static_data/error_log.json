@@ -1,0 +1,14 @@
+[
+    {
+        "timestamp": "2024-06-01 14:55:02,358",
+        "logger": "app.api.Relays.RelayControllerTarget",
+        "level": "ERROR",
+        "message": "RelayControllerTarget::setup name 'GPIO' is not defined"
+    },
+    {
+        "timestamp": "2024-06-01 14:55:09,866",
+        "logger": "app.api.Relays.RelayControllerTarget",
+        "level": "ERROR",
+        "message": "RelayControllerTarget::setup name 'GPIO' is not defined"
+    }
+]
