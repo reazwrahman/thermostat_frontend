@@ -108,7 +108,7 @@ img[src*="logo."]:hover {
     
 } 
 
-.grid-container div:nth-child(2n) {
+.grid-container div:nth-child(2) {
     background-color: #ffeacf; 
 }
 
@@ -174,7 +174,7 @@ footer {
     display: flex;
     background-color: rgb(7, 30, 12);
     color: #ffffff;
-    padding: 20px;
+    padding: 30px;
     margin-top: auto; /* Pushes the footer to the bottom of the page */ 
     font-size: 20px; 
     justify-content: center; 

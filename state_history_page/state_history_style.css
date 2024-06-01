@@ -104,7 +104,7 @@ img[src*="logo."]:hover {
 
 .container { 
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
     max-width: 1200px;
     width: 100%;
     box-sizing: border-box; /* Ensure padding doesn't increase width beyond 100% */
@@ -125,7 +125,7 @@ table {
     margin: 20px 0;
     font-size: 18px;
     background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
 }
 th, td {
     padding: 12px;
@@ -137,12 +137,13 @@ th {
     color: #ffe2e2; /* Dark Grey */
 }
 tr:nth-child(even) {
-    background-color: #f7f2da; /* Light Green */
+    background-color: #d6efd0; /* Light Green */
 } 
 
 tr:nth-child(odd) {
     background-color: #ffffff; /* Light Green */
 }
+
 tr:hover {
     background-color: #f1f1f1;
 }
