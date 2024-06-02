@@ -41,15 +41,15 @@ th, td {
     text-align: left;
 }
 th {
-    background-color: #011e08; /* Light Orange */
+    background-color: #011e08; 
     color: #ffe2e2; /* Dark Grey */
 }
 tr:nth-child(even) {
-    background-color: #d6efd0; /* Light Green */
+    background-color: #d6efd0; 
 } 
 
 tr:nth-child(odd) {
-    background-color: #e1eeff; /* Light Green */
+    background-color: #e1eeff; 
 }
 
 tr:hover {
