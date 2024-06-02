@@ -49,7 +49,7 @@ tr:nth-child(even) {
 } 
 
 tr:nth-child(odd) {
-    background-color: #ffffff; /* Light Green */
+    background-color: #e1eeff; /* Light Green */
 }
 
 tr:hover {

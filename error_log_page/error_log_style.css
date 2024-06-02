@@ -45,7 +45,7 @@ th {
     color: #ffffff; /* Dark Grey */
 }
 tr:nth-child(even) {
-    background-color: #f6fff3; /* Light Green */
+    background-color: #e1eeff; /* Light Green */
 } 
 
 tr:nth-child(odd) {
