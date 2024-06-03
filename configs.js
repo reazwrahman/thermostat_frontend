@@ -1,13 +1,14 @@
 
 const RUNNING_MODES = { 
-    SIM: "SIM", 
+    SIM: "SIMULATION", 
     TARGET: "TARGET"
 } 
 
 const MODE = RUNNING_MODES.SIM
 
 const SECRETS= { 
-    WEATHER_API_KEY: "", 
+    WEATHER_API_KEY: "",
+    SWITCH_KEY: "" 
 }
 
 const laptop_ip = "192.168.1.37:8080"; 
