@@ -1,9 +1,7 @@
+import { ENDPOINTS, MODE } from "../configs.js";
 
-// for laptop
-const state_history_url = `http://192.168.1.37:8080/stateHistory`;
+const state_history_url = ENDPOINTS[MODE].STATE_HISTORY_URL;
 
-// for the raspberry pi 
-//const state_history_url = `http://192.168.1.209:8080/stateHistory`
 
 async function get_state_history(){   
     let response; 

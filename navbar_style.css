@@ -72,7 +72,7 @@ img[src*="logo."]:hover {
     position: absolute;
     left: 0;
     top: 100%;    /* Position the dropdown right below the menu item */
-    background: rgb(7, 30, 12);
+    background: rgb(8, 47, 17);
     list-style: none;
     padding: 0;
     margin: 0;

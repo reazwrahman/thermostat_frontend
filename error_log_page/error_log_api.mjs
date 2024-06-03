@@ -1,4 +1,7 @@
 
+import { ENDPOINTS } from "../configs.js";
+
+
 // for laptop (sim)
 const error_log_url = `http://192.168.1.37:8080/errorLogs`;
 

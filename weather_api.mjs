@@ -1,9 +1,13 @@
-const api_key = ''; // weather map API key goes here
+import { SECRETS } from "./configs.js";
 
-const lat = 40.683961 
-const long = -73.817874
+const api_key = SECRETS.WEATHER_API_KEY;
+
+
+// coordinates for Queens, NYC
+const LATITUDE = 40.683961 
+const LONGITUDE = -73.817874
  
-async function get_weather_info(latitude=lat, longitude=long) { 
+async function get_weather_info(latitude=LATITUDE, longitude=LONGITUDE) { 
     const weather_api_url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${api_key}`;
 
     try {
