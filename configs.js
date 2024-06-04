@@ -24,7 +24,7 @@ const ENDPOINTS= {
     
     [RUNNING_MODES.TARGET]:{ 
         HEALTH_URL: `http://${raspberry_ip}/health`, 
-        DEVICE_STATE_URL: `http://${raspberry_ip}/state`, 
+        DEVICE_STATE_URL: `http://${raspberry_ip}/currentState`, 
         STATE_HISTORY_URL: `http://${raspberry_ip}/stateHistory`, 
         ERROR_LOG_URL: `http://${raspberry_ip}/errorLogs`
     }

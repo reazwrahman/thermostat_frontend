@@ -1,12 +1,9 @@
 
-import { ENDPOINTS } from "../configs.js";
+import { ENDPOINTS, MODE } from "../configs.js";
 
 
 // for laptop (sim)
-const error_log_url = `http://192.168.1.37:8080/errorLogs`;
-
-// for the raspberry pi (target)
-//const error_log_url = `http://192.168.1.209:8080/errorLogs`
+const error_log_url = ENDPOINTS[MODE].ERROR_LOG_URL;
 
 async function get_error_log(){   
     let response; 
