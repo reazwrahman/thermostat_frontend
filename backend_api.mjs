@@ -12,7 +12,7 @@ async function get_health(){
         const body = await response.json();
         response_clone.timestamp = body.timestamp;
     } catch (error) {   
-        console.error('Error fetching health data:', error); 
+        console.warn('Error fetching health data:', error); 
         response = await fetch("./static_data/health_data.json"); 
         response_clone = await response.json(); 
     } 
@@ -40,7 +40,7 @@ async function get_device_state(){
         const response = await fetch(device_state_url);
         data = await response.json();
     } catch (error) {
-        console.error('Error fetching device state data from backend api:', error); 
+        console.warn('Error fetching device state data from backend api:', error); 
         console.log("get_device_state(): using static json data");
         const response = await fetch("./static_data/device_state_data.json");  
         data = await response.json();

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Thermostat</title>
+    <link rel="stylesheet" href="switch_style.css">  
+    <link rel="stylesheet" href="../navbar_style.css">
+    <script src="./main_switch.js" type="module" defer> </script> 
+
+</head> 
+<body class="nav-body">
+    <!-- Nav bar -->
+        <nav class="navbar"> 
+            <a href="../index.html"> <img src="../logo.jpeg" alt="Logo" class="navbar-logo"> </a>
+            <ul class="menu"> 
+                <li class="menu-item" tabindex="0">Device Switch</li>
+                <li class="menu-item" tabindex="0">Thermostat
+                <ul class="dropdown">
+                    <li class="dropdown-item">Set Themostat</li>
+                    <li class="dropdown-item">Shut down</li>
+                </ul> 
+            </li>
+                <li><a href="./power_cycle_page/power_cycle_index.html" class="menu-item" tabindex="0">Power Cycle</a></li>
+                <li class="menu-item" tabindex="0">Troubleshoot  
+                    <ul class="dropdown">
+                        <li><a href="./state_history_page/state_history_index.html" class="dropdown-item">State Transitions</a></li>
+                        <li><a href="./error_log_page/error_log_index.html" class="dropdown-item">Error Logs</a></li>
+                    </ul>
+                </li> 
+            </ul>
+        </nav>
+
+    <!-- Grid -->
+    <div class="grid-container"> 
+        <div class="card" id="device-status-card" tabindex="0">
+            <h3>Device Status</h3>
+            <p>Backend API not available</p>
+        </div>  
+        
+        <!-- On card -->
+        <div class="card" id="switch-control-card" tabindex="0">
+            <h3>Turn Device On</h3>
+            <button id="toggle-switch-btn">Turn On</button>
+            <p id="on-message"></p> 
+            <br>
+            <div class="hidden-card" id="forced-turn-on"> 
+                <p> I understand the risk and wish to proceed anyway</p>
+                <button id="forced-switch-btn">Forced Turn On</button>
+                <p id="on-message"></p> 
+            </div>
+        </div> 
+    </div> 
+    </div>  
+
+    
+</body> 
+</html> 

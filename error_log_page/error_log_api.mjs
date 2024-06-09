@@ -12,7 +12,7 @@ async function get_error_log(){
         response = await fetch(error_log_url);  
         body = await response.json();
     } catch (error) {   
-        console.error('Error fetching error logs:', error); 
+        console.warn('Error fetching error logs:', error); 
         response = await fetch("./static_data/error_log.json");  
         body = await response.json();
         

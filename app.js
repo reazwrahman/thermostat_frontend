@@ -8,7 +8,7 @@ import { get_health,get_device_state } from "./backend_api.mjs";
     navigator.geolocation.getCurrentPosition(success_call_back, error_call_back);
 } else {
     // Handle the case where browser doesn't support geolocation
-    console.error("Geolocation is not supported by this browser.");
+    console.warn("Geolocation is not supported by this browser.");
 }*/
 
 // uses static json data (test code, comment it out to use the actual weather api above)

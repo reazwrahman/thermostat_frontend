@@ -1,0 +1,9 @@
+{
+    "device_status": "OFF",
+    "last_temperature": 11, 
+    "last_humidity": 50,
+    "last_turned_off": "2024-05-26 21:57:22.016949",
+    "last_turned_on": "2024-05-26 21:57:17.709804",
+    "target_temperature": 20,
+    "timestamp": "2024-05-26 21:57"
+}

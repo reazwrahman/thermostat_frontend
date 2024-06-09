@@ -10,7 +10,7 @@ async function get_state_history(){
         response = await fetch(state_history_url);  
         body = await response.json();
     } catch (error) {   
-        console.error('Error fetching state history data:', error); 
+        console.warn('Error fetching state history data:', error); 
         response = await fetch("./static_data/state_history.json");  
         body = await response.json();
         

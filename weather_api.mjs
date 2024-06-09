@@ -15,7 +15,7 @@ async function get_weather_info(latitude=LATITUDE, longitude=LONGITUDE) {
         const data = await response.json(); 
         return data;
     } catch (error) {
-        console.error('Error fetching weather data:', error); 
+        console.warn('Error fetching weather data:', error); 
         const response = await fetch("./static_data/weather_data.json");  
         data = await response.json(); 
         return data;
