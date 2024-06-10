@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Thermostat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../navbar_style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-body">
+    <!-- Nav bar -->
+    <nav class="navbar">
+        <a href="../../index.html"> <img src="../../logo.jpeg" alt="Logo" class="navbar-logo"> </a>
+        <ul class="menu">
+            <li><a href="./switch_page/index.html" class="dropdown-item">Device Switch</a></li>
+            <li class="menu-item" tabindex="0">Thermostat
+                <ul class="dropdown">
+                    <li class="dropdown-item">Set Themostat</li>
+                    <li class="dropdown-item">Shut down</li>
+                </ul>
+            </li>
+            <li><a href="./power_cycle_page/power_cycle_index.html" class="menu-item" tabindex="0">Power Cycle</a></li>
+            <li class="menu-item" tabindex="0">Troubleshoot
+                <ul class="dropdown">
+                    <li><a href="./state_history_page/state_history_index.html" class="dropdown-item">State
+                            Transitions</a></li>
+                    <li><a href="./error_log_page/error_log_index.html" class="dropdown-item">Error Logs</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- gallery content -->
+
+    <div class="gallery-container">
+        <header>
+            <h1>Gallery: Hardware Development</h1>
+            <p class="intro">A collection of photos taken during different phases of the embedded hardware development</p>
+        </header>
+        
+        <section class="gallery"> 
+            
+            <div class="gallery-item">
+                <img src="images/testbed_led.jpeg" alt="Description of image 3">
+                <div class="description">Raspberry PI with DHT22 Sensor and an LED as a placeholder for the Power Relay</div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/handmade_relay1.png" alt="Description of image 1">
+                <div class="description">Handmade Power Relay with Arduino: first version of this project</div>
+            </div> 
+
+            <div class="gallery-item">
+                <img src="images/handmade_relay_with_rf.jpeg" alt="Description of image 1">
+                <div class="description">Handmade Power Relay with Arduino and RF Module (NRF24L01)</div>
+            </div>
+            
+        </section>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+/* Reset some default browser styles */
+body, h1, p, figure, img, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Basic page setup */
+body {
+    font-family: 'Arial, sans-serif';
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Blog container styles */
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #eef9ee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+header .date {
+    font-size: 1em;
+    color: #999;
+} 
+header .author {
+    font-size: 1em;
+    color: #999;
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+}
+
+.content .intro {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.content .main-text {
+    font-size: 1.1em;
+    margin: 20px 0;
+}
+
+/* Image and caption styles */
+figure.image {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure.image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+figure.image figcaption {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+}
+
+
+/* Links section styles */
+.links {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.links p {
+    font-size: 1.2em;
+}
+
+.links a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+}
+
+.links a:active {
+    transform: scale(0.98);
+}

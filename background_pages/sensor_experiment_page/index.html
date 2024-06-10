@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Thermostat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../navbar_style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-body">
+    <!-- Nav bar -->
+    <nav class="navbar">
+        <a href="../../index.html"> <img src="../../logo.jpeg" alt="Logo" class="navbar-logo"> </a>
+        <ul class="menu">
+            <li><a href="./switch_page/index.html" class="dropdown-item">Device Switch</a></li>
+            <li class="menu-item" tabindex="0">Thermostat
+                <ul class="dropdown">
+                    <li class="dropdown-item">Set Themostat</li>
+                    <li class="dropdown-item">Shut down</li>
+                </ul>
+            </li>
+            <li><a href="./power_cycle_page/power_cycle_index.html" class="menu-item" tabindex="0">Power Cycle</a></li>
+            <li class="menu-item" tabindex="0">Troubleshoot
+                <ul class="dropdown">
+                    <li><a href="./state_history_page/state_history_index.html" class="dropdown-item">State
+                            Transitions</a></li>
+                    <li><a href="./error_log_page/error_log_index.html" class="dropdown-item">Error Logs</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- blog content -->
+
+    <div class="blog-container">
+        <header>
+            <h1>Experimenting With Temperature Sensor (DHT22)</h1> 
+            <p class="author">Reaz W. Rahman</p>
+            <p class="date">Published on June 9, 2024</p>
+        </header>
+
+        <section class="content">
+            <p class="intro">
+                To evaluate the consistency of the DHT22 temperature sensor's readings, I conducted a series of tests
+                comparing its data to the OpenWeatherMap API. For control, I used the OpenWeatherMap API to retrieve
+                weather data for my current location. Every five minutes, I pinged my backend API to gather readings
+                from the DHT22 sensor and the weather data from OpenWeatherMap. This process continued throughout the
+                day and night. The first set of images shows the data collected during the night of June 4, 2024.
+            </p>
+
+            <figure class="image">
+                <img src="./images/temperature_plot_june4_night.png" alt="temperature_plot_june4_night">
+                <figcaption>Temperature plot for June 4, 2024 Night</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="./images/humidity_plot_june4_night.png" alt="humidity_plot_june4_night">
+                <figcaption>Humidity plot for June 4, 2024 Night</figcaption>
+            </figure>
+
+            <p class="main-text">
+                The second set of images, from the day of June 5, 2024, includes plots for temperature and humidity.
+                These plots reveal that the gap between the readings from the DHT22 sensor and the OpenWeatherMap API
+                remained consistent over time. This consistency indicates that the DHT22 sensor provides reliable data.
+                The results demonstrate the sensor's accuracy and reliability, making it a dependable choice for
+                temperature and humidity measurements.
+            </p>
+
+            <figure class="image">
+                <img src="./images/temperature_plot_june5_day.png" alt="temperature_plot_june5_day">
+                <figcaption>Temperature plot for June 5, 2024 Day</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="./images/humidity_plot_june5_day.png" alt="humidity_plot_june5_day">
+                <figcaption>Humidity plot for June 5, 2024 Day</figcaption>
+            </figure> 
+        </section> 
+
+        <section class="links">
+            <p>
+                <a href="https://github.com/reazwrahman/temperature_sensor_experiment" target="_blank">Github repository for this experiment</a><br>
+                <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap API</a>
+            </p>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
