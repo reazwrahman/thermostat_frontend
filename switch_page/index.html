@@ -39,20 +39,33 @@
         </div>  
         
         <!-- On card -->
-        <div class="card" id="switch-control-card" tabindex="0">
+        <div class="card" id="switch-control-card-on" tabindex="0">
             <h3>Turn Device On</h3>
-            <button id="toggle-switch-btn">Turn On</button>
+            <button id="on-btn">Turn On</button>
             <p id="on-message"></p> 
             <br>
             <div class="hidden-card" id="forced-turn-on"> 
-                <p> I understand the risk and wish to proceed anyway</p>
-                <button id="forced-switch-btn">Forced Turn On</button>
-                <p id="on-message"></p> 
+                <p> I understand the risk and wish to proceed anyway: </p>
+                <button id="forced-on-btn">Forced Turn On</button>
+                <p id="forced-on-message"></p> 
+            </div>
+        </div>  
+
+        <!-- Off card -->
+        <div class="card" id="switch-control-card-off" tabindex="0">
+            <h3>Turn Device Off</h3>
+            <button id="off-btn">Turn Off</button>
+            <p id="off-message"></p> 
+            <br>
+            <div class="hidden-card" id="forced-turn-off"> 
+                <p> I understand the risk and wish to proceed anyway: </p>
+                <button id="forced-off-btn">Forced Turn Off</button>
+                <p id="forced-off-message"></p> 
             </div>
         </div> 
-    </div> 
-    </div>  
 
+
+    </div> 
     
 </body> 
 </html> 
