@@ -17,12 +17,14 @@
 } 
 
 .grid-container div:nth-child(2n) {
-    background-color: #e1eeff; 
+    background-color: #e1eeff;  
+    background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
 }
 
 
 .card { 
-    background: #e4fce3;
+    background: #e4fce3; 
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
@@ -38,8 +40,11 @@
 
 .card p {
     margin: 10px 0;
-    color: #666;
-    font-size: 1em;
+    color: #000000;
+    font-size: 1em; 
+    word-wrap: break-word; /* Ensure long words break and wrap to the next line */
+    white-space: normal; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif    
 }
 
 .card:focus {
