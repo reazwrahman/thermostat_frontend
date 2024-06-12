@@ -56,7 +56,7 @@ async function turn_device_on(){
        
         data = static_turn_on_data; 
         data.url = "static sample data";
-        return 403;
+        return 200;
     }   
     finally{  
         get_device_state();

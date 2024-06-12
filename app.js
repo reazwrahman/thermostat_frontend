@@ -1,6 +1,6 @@
 
 import { success_call_back, error_call_back, display_weather_card } from "./weather_api.mjs"; 
-import { get_health,get_device_state } from "./backend_api.mjs";
+import { get_health,get_device_state, get_thermostat } from "./backend_api.mjs";
 
 
 // display weather card information (Uses real weather api)
@@ -18,4 +18,7 @@ display_weather_card();
 get_health();
 
 // display sensor reading and device state data 
-get_device_state();
+get_device_state(); 
+
+// display thermostat data 
+get_thermostat();

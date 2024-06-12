@@ -1,7 +1,8 @@
 import {MODE, ENDPOINTS} from "./configs.js";
 
 const health_url = ENDPOINTS[MODE].HEALTH_URL; 
-const device_state_url = ENDPOINTS[MODE].DEVICE_STATE_URL;
+const device_state_url = ENDPOINTS[MODE].DEVICE_STATE_URL; 
+const thermostat_url = ENDPOINTS[MODE].THERMOSTAT_URL;
 
 async function get_health(){   
     let response; 
@@ -28,7 +29,7 @@ function display_health_data(response){
         <h3>Backend API </h3>  
         <p>Health Status: ${response.statusText}</p> 
         <p>Status Code: ${response.status}</p>  
-        <p>Last Checked On: ${response.timestamp}</p>
+        <p>Last Updated On: ${response.timestamp}</p>
         <p>URL: ${response.url}</p> 
     `;  
 }
@@ -68,8 +69,41 @@ function display_device_data(data){
         <h3>Sensor Readings</h3>  
         <p>Current Temperature: ${data.last_temperature} ºC</p> 
         <p>Current Humidity: ${data.last_humidity} %</p>  
-        <p>Target Temperature: ${data.target_temperature} ºC</p> 
+        <p>Target Temperature: ${data.target_temperature} ºC</p>  
+        <p>Last Updated On: ${data.timestamp}</p> 
     `; 
+};
+
+async function get_thermostat(){   
+    let response; 
+    let body;
+    try { 
+        response = await fetch(thermostat_url);  
+        body = await response.json(); 
+        body.url = thermostat_url;
+    } catch (error) {   
+        console.warn('Error fetching thermostat data:', error); 
+        response = await fetch("./static_data/thermostat_data.json"); 
+        body = await response.json(); 
+        body.url = "sample static data";
+    } 
+    finally{ 
+        display_thermostat_data(body);
+    }
 } 
 
-export{get_health,get_device_state};
+function display_thermostat_data(response){  
+    console.log(response)
+    const health_card = document.getElementById("thermostat-status");  
+    health_card.innerHTML = `
+        <h3>Thermostat Status </h3>  
+        <p>Thermostat (Heater): ${response.thermo_thread}</p> 
+        <p>Thermostat (AC): ${response.ac_thread}</p> 
+        <p>Target Temperature: ${response.target_temperature} °C</p>  
+        <p>Last Updated On: ${response.updated_on}</p>
+    `;  
+}
+
+
+
+export{get_health,get_device_state, get_thermostat};
