@@ -1,79 +1,57 @@
 [
     {
     "state_change": "Device Turned On",
-    "state_change_cause": "user action",
-    "effective_temperature": 0.0,
-    "target_temperature": null,
-    "last_turned_on": "2024-05-31 21:31:26.814043",
+    "state_change_cause": "Current Temperature is above target temperature",
+    "effective_temperature": 32.3,
+    "target_temperature": 10.5,
+    "last_turned_on": "2024-06-12 09:24:56.618419",
     "last_turned_off": null,
-    "current_timestamp": "2024-05-31 21:31:26.833292",
-    "on_for_minutes": 0.0,
-    "off_for_minutes": ""
-    },
-    {
-    "state_change": "Device Turned On",
-    "state_change_cause": "user action",
-    "effective_temperature": 0.0,
-    "target_temperature": null,
-    "last_turned_on": "2024-05-31 21:31:26.814043",
-    "last_turned_off": null,
-    "current_timestamp": "2024-05-31 21:31:26.833292",
+    "current_timestamp": "2024-06-12 09:24:56.622629",
     "on_for_minutes": 0.0,
     "off_for_minutes": ""
     },
     {
     "state_change": "Device Turned Off",
+    "state_change_cause": "Device's maximum on time has exceeded",
+    "effective_temperature": 30.5,
+    "target_temperature": 10.5,
+    "last_turned_on": "2024-06-12 09:24:56.618419",
+    "last_turned_off": "2024-06-12 09:26:56.715848",
+    "current_timestamp": "2024-06-12 09:26:56.719841",
+    "on_for_minutes": 2.0,
+    "off_for_minutes": 0.0
+    },
+    {
+    "state_change": "Device Turned On",
+    "state_change_cause": "Current Temperature is above target temperature",
+    "effective_temperature": 30.5,
+    "target_temperature": 10.5,
+    "last_turned_on": "2024-06-12 09:27:56.766477",
+    "last_turned_off": "2024-06-12 09:26:56.715848",
+    "current_timestamp": "2024-06-12 09:27:56.769720",
+    "on_for_minutes": 0.0,
+    "off_for_minutes": 1.0
+    },
+    {
+    "state_change": "Device Turned Off",
     "state_change_cause": "user action",
     "effective_temperature": 0.0,
-    "target_temperature": null,
-    "last_turned_on": "2024-05-31 21:31:26.814043",
-    "last_turned_off": "2024-05-31 21:31:30.476326",
-    "current_timestamp": "2024-05-31 21:31:30.498361",
-    "on_for_minutes": 0.06,
+    "target_temperature": 10.5,
+    "last_turned_on": "2024-06-12 09:27:56.766477",
+    "last_turned_off": "2024-06-12 09:29:47.198142",
+    "current_timestamp": "2024-06-12 09:29:47.201808",
+    "on_for_minutes": 1.84,
     "off_for_minutes": 0.0
     },
     {
     "state_change": "Device Turned On",
     "state_change_cause": "user action",
     "effective_temperature": 0.0,
-    "target_temperature": null,
-    "last_turned_on": "2024-05-31 22:47:59.508560",
-    "last_turned_off": "2024-05-31 21:31:30.476326",
-    "current_timestamp": "2024-05-31 22:47:59.528132",
+    "target_temperature": 10.5,
+    "last_turned_on": "2024-06-12 09:30:03.914184",
+    "last_turned_off": "2024-06-12 09:29:47.198142",
+    "current_timestamp": "2024-06-12 09:30:03.917943",
     "on_for_minutes": 0.0,
-    "off_for_minutes": 76.48
-    },
-    {
-    "state_change": "Device Turned Off",
-    "state_change_cause": "user action",
-    "effective_temperature": 0.0,
-    "target_temperature": null,
-    "last_turned_on": "2024-05-31 22:47:59.508560",
-    "last_turned_off": "2024-05-31 22:48:01.993891",
-    "current_timestamp": "2024-05-31 22:48:02.014817",
-    "on_for_minutes": 0.04,
-    "off_for_minutes": 0.0
-    },
-    {
-    "state_change": "Device Turned On",
-    "state_change_cause": "",
-    "effective_temperature": 0.0,
-    "target_temperature": null,
-    "last_turned_on": "2024-05-31 22:54:35.562661",
-    "last_turned_off": "2024-05-31 22:48:01.993891",
-    "current_timestamp": "2024-05-31 22:54:35.650858",
-    "on_for_minutes": 0.0,
-    "off_for_minutes": 6.56
-    },
-    {
-    "state_change": "Device Turned Off",
-    "state_change_cause": "",
-    "effective_temperature": 0.0,
-    "target_temperature": null,
-    "last_turned_on": "2024-05-31 22:54:35.562661",
-    "last_turned_off": "2024-05-31 22:54:43.325634",
-    "current_timestamp": "2024-05-31 22:54:43.441025",
-    "on_for_minutes": 0.13,
-    "off_for_minutes": 0.0
+    "off_for_minutes": 0.28
     }
-    ]
+]
