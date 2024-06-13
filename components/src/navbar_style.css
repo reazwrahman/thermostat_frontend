@@ -96,7 +96,7 @@ img[src*="logo."]:hover {
 
 @media (max-width: 600px) {
     .navbar {
-        font-size: 12px; /* Reduce font size for mobile */
+        font-size: 8px; /* Reduce font size for mobile */
         flex-direction: row; /* Stack items vertically */
     }
 
@@ -105,10 +105,14 @@ img[src*="logo."]:hover {
     }
 
     .menu-item {
-        padding: 20px 15px; /* Adjust padding for mobile */
+        padding: 5px 5px; /* Adjust padding for mobile */
     } 
 
     .navbar-logo{ 
-        height: 40px; 
-    } 
+        height: 30px; 
+    }  
+
+    .dropdown {
+        min-width: 50px;    /* Ensure a minimum width for dropdown items */
+    }
 }

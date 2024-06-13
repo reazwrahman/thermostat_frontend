@@ -92,8 +92,7 @@ async function get_thermostat(){
     }
 } 
 
-function display_thermostat_data(response){  
-    console.log(response)
+function display_thermostat_data(response){ 
     const health_card = document.getElementById("thermostat-status");  
     health_card.innerHTML = `
         <h3>Thermostat Status </h3>  

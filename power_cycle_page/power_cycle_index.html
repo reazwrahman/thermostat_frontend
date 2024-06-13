@@ -5,30 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Device State Changes</title>
     <link rel="stylesheet" href="power_cycle_style.css">  
-    <link rel="stylesheet" href="../navbar_style.css">  
-</head>
-<body> 
+    <link rel="stylesheet" href="../navbar_style.css">   
 
+    <!-- React CDN Links -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Babel CDN -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+
+    <!-- navbar component--> 
+    <script src="/thermostat_frontend/components/src/Navbar.js" type="text/babel"></script> 
+    <link rel="stylesheet" href="/thermostat_frontend/components/src/navbar_style.css">
+</head>
+
+<body> 
     <!-- Nav bar -->
-    <nav class="navbar"> 
-        <a href="../index.html"> <img src="../logo.jpeg" alt="Logo" class="navbar-logo"> </a>
-        <ul class="menu"> 
-            <li class="menu-item" tabindex="0">Device Switch</li>
-            <li class="menu-item" tabindex="0">Thermostat
-            <ul class="dropdown">
-                <li class="dropdown-item">Set Themostat</li>
-                <li class="dropdown-item">Shut down</li>
-            </ul> 
-        </li>
-            <li class="menu-item" tabindex="0">Power Cycle</li>
-            <li class="menu-item" tabindex="0">Troubleshoot  
-                <ul class="dropdown">
-                    <li><a href="../state_history_page/state_history_index.html" class="dropdown-item">State Transitions</a></li>
-                    <li><a href="../error_log_page/error_log_index.html" class="dropdown-item">Error Logs</a></li>
-                </ul>
-            </li> 
-        </ul>
-    </nav> 
+    <nav class="navbar" id ="navbar"></nav>
     <!-- Nav bar end --> 
 
     <div class="container">
