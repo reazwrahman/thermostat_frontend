@@ -29,7 +29,9 @@ function NavBar() {
           <li className="menu-item" tabIndex="0">
             Background
             <ul className="dropdown">
-              <li className="dropdown-item">Context</li>
+            <li>
+                <a href="/thermostat_frontend/background_pages/context_page/index.html" className="dropdown-item">Context</a>
+              </li>
               <li>
                 <a href="/thermostat_frontend/background_pages/hardware_page/index.html" className="dropdown-item">Hardware</a>
               </li>

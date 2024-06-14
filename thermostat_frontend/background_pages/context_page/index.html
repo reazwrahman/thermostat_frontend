@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Thermostat</title>
+
+    <!-- React CDN Links -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Babel CDN -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- navbar component-->
+    <script src="/thermostat_frontend/components/src/Navbar.js" type="text/babel"></script>
+    <link rel="stylesheet" href="/thermostat_frontend/components/src/navbar_style.css">
+
+    <!-- page related links -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-body">
+    <!-- Nav bar -->
+    <nav class="navbar" id="navbar"></nav>
+
+    <!-- blog content -->
+    <div class="blog-container">
+        <header>
+            <h1>A Summary of the Project and the Motivation Behind It</h1>
+            <p class="author">Reaz W. Rahman</p>
+            <p class="date">Published on June 14, 2024</p>
+        </header>
+
+        <section class="content">
+            <p class="intro">
+                I live in an old single family house in New York City. The boiler heating system in the house is far
+                from ideal in the winter. Either it gets unbearably hot in my room during the day to do any work or
+                extremely cold at night making me wake up in the middle of the night.
+            </p>
+
+            <p class="main-text">
+                I have an electric heater in my room which I can turn on and off manually to get the temperature I want
+                in
+                the room but the problem is I don’t want to wake up in the middle of the night to turn on/off this
+                device. My solution is to automatically control the heater based on the current temperature in the room.
+            </p>
+
+            <p class="main-text">
+                My plan is to divide the project to have two different modes: 1) I am calling the first one “target”
+                state where everything will be running on actual hardware (microcontroller, sensor and relay) and 2) the
+                simulation mode where I can run the program on any computer and test out the fundamental logic.
+            </p>
+
+            <figure class="image">
+                <img src="./images/sim_vs_target.png" alt="sim_vs_target">
+                <figcaption>simulation vs target mode</figcaption>
+            </figure>
+
+            <figure class="image">
+                <img src="./images/end2end_diagram.png" alt="end to end solution diagram">
+                <figcaption>end to end solution diagram</figcaption>
+            </figure>
+        </section>
+
+        <section class="links">
+            <p> 
+                <a href="TBD" target="_blank">Frontend Github
+                    Repository</a><br>
+                <a href="https://github.com/reazwrahman/Thermostat_Backend_API" target="_blank">Backend API 
+                    Github Repository</a><br>  
+                <a href="https://github.com/reazwrahman/SmartThermostat_Simulation" target="_blank">Backend Simulation 
+                     Github Repository</a><br> 
+            </p>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
