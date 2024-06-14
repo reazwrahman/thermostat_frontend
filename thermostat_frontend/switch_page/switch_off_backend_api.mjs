@@ -1,5 +1,5 @@
 import {MODE, ENDPOINTS, SECRETS} from "../configs.js";  
-import { get_device_state } from "./switch_on_backend_api.mjs";
+import { get_device_state } from "./device_data_backend_api.mjs";
 import { static_turn_off_data } from "./static_data/turn_off_data.js"; 
 import { static_forced_off_data } from "./static_data/forced_off_data.js";
 

@@ -1,7 +1,8 @@
-import { get_device_state,  turn_device_on, force_device_on} from "./switch_on_backend_api.mjs";
-import {turn_device_off, force_device_off} from "./switch_off_backend_api.mjs"
 
-
+import {get_device_configs, get_device_state } from "./device_data_backend_api.mjs";
+import {turn_device_on, force_device_on} from "./switch_on_backend_api.mjs";
+import {turn_device_off, force_device_off} from "./switch_off_backend_api.mjs" 
+ 
 const forcedDivOn = document.getElementById("forced-turn-on");  
 forcedDivOn.style.display = "None";
 
@@ -9,7 +10,10 @@ const forcedDivOff = document.getElementById("forced-turn-off");
 forcedDivOff.style.display = "None";
 
 // get and display device data
-get_device_state();  
+get_device_state();   
+
+// get and display device configs data 
+get_device_configs();
 
 
 

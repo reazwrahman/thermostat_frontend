@@ -24,7 +24,8 @@ const ENDPOINTS= {
         FORCED_ON_URL: `http://${laptop_ip}/gameSetup/forcedOn`,  
         TURN_OFF_URL: `http://${laptop_ip}/gameSetup/off`, 
         FORCED_OFF_URL: `http://${laptop_ip}/gameSetup/forcedOff`, 
-        THERMOSTAT_URL: `http://${laptop_ip}/gameSetup/thermostat`
+        THERMOSTAT_URL: `http://${laptop_ip}/gameSetup/thermostat`, 
+        CONFIGS_URL: `http://${laptop_ip}/deviceConfigs`
     }, 
     
     [RUNNING_MODES.TARGET]:{ 
@@ -36,7 +37,8 @@ const ENDPOINTS= {
         FORCED_ON_URL: `http://${raspberry_ip}/gameSetup/forcedOn`, 
         TURN_OFF_URL: `http://${raspberry_ip}/gameSetup/off`, 
         FORCED_OFF_URL: `http://${raspberry_ip}/gameSetup/forcedOff`, 
-        THERMOSTAT_URL: `http://${raspberry_ip}/gameSetup/thermostat`
+        THERMOSTAT_URL: `http://${raspberry_ip}/gameSetup/thermostat`, 
+        CONFIGS_URL: `http://${raspberry_ip}/deviceConfigs`
     }
 }  
 

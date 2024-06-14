@@ -1,44 +1,17 @@
 import {MODE, ENDPOINTS, SECRETS} from "../configs.js"; 
 import { static_turn_on_data } from "./static_data/turn_on_data.js"; 
 import { static_forced_on_data } from "./static_data/forced_on_data.js";
+import { get_device_state } from "./device_data_backend_api.mjs";
 
-const device_state_url = ENDPOINTS[MODE].DEVICE_STATE_URL; 
+
 const turn_on_url = ENDPOINTS[MODE].TURN_ON_URL; 
-const forced_on_url = ENDPOINTS[MODE].FORCED_ON_URL;   
+const forced_on_url = ENDPOINTS[MODE].FORCED_ON_URL;    
 
 const requestBody = {
     "switch_key": SECRETS.SWITCH_KEY
 };
 
 
-async function get_device_state(){  
-    let data; 
-    try {
-        const response = await fetch(device_state_url);
-        data = await response.json();
-    } catch (error) {
-        console.warn('Error fetching device state data from backend api:', error); 
-        console.log("get_device_state(): using static json data");
-        const response = await fetch("./static_data/device_state_data.json");  
-        data = await response.json();
-    }  
-    finally{ 
-        display_device_data(data);  
-    }
-}
-
-function display_device_data(data){
-
-    const status_card = document.getElementById("device-status-card");  
-
-    status_card.innerHTML = `
-        <h3>Device Status</h3>  
-        <p>Device Status: ${data.device_status}</p> 
-        <p>Last Turned ON at: ${data.last_turned_on}</p> 
-        <p>Last Turned OFF at: ${data.last_turned_off}</p> 
-        <p>Last Updated On: ${data.timestamp}</p> 
-    `; 
-} 
 
 
 async function turn_device_on(){ 
@@ -121,4 +94,4 @@ function display_message_forced_on(data){
     }
 }
 
-export{get_device_state, turn_device_on, force_device_on};
+export{turn_device_on, force_device_on};
