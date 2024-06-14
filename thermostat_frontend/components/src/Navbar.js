@@ -9,7 +9,8 @@ function NavBar() {
           <li>
             <a href="/thermostat_frontend/switch_page/index.html" className="dropdown-item">Device Switch</a>
           </li>
-          <li className="menu-item" tabIndex="0">Thermostat
+          <li>
+            <a href="/thermostat_frontend/thermostat_page/thermostat_index.html" className="menu-item" tabIndex="0">Thermostat</a>
           </li>
           <li>
             <a href="/thermostat_frontend/power_cycle_page/power_cycle_index.html" className="menu-item" tabIndex="0">PowerCycle</a>

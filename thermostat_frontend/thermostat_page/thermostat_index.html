@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Thermostat</title>
+
+    <!-- React CDN Links -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Babel CDN -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+
+    <!-- navbar component--> 
+    <script src="/thermostat_frontend/components/src/Navbar.js" type="text/babel"></script> 
+    <link rel="stylesheet" href="/thermostat_frontend/components/src/navbar_style.css">
+
+    <!-- page related links -->
+    <link rel="stylesheet" href="thermostat_style.css">
+    <script src="./main.js" type="module" defer> </script>
+
+</head> 
+<body class="nav-body">
+   <!-- Nav bar -->
+   <nav class="navbar" id ="navbar"></nav>
+
+    <!-- Grid -->
+    <div class="grid-container">  
+        <!-- status card --> 
+        <div class="card" id="thermostat-status" tabindex="0">
+            <h3>Thermostat Status</h3>
+            <p>Not Implemented Yet</p>
+        </div>  
+
+        <!-- on card -->
+        <div class="card" id="thermostat-on" tabindex="0">
+            <h3>Thermostat On </h3>
+            <label for="device-select-on">Select Device:</label>
+            <select id="device-select-on" name="devices">
+                <option value="HEATER">Heater</option>
+                <option value="AC">AC</option>
+            </select> 
+
+            <label for="temperature-select-on">Temperature:</label>
+            <select id="temperature-select-on">
+                <!-- Options will be populated by JavaScript -->
+            </select> 
+            <br>   
+            <button id="on-btn" class="btn">Turn On</button>
+                <br>
+                <p id="thermostat-on-message"></p> 
+        </div> 
+
+        <!-- off card --> 
+        <div class="card" id="thermostat-off" tabindex="0">
+            <h3>Thermostat Off </h3>
+
+            <label for="device-select-off">Select Device:</label>
+            <select id="device-select-off" name="devices">
+                <option value="HEATER">Heater</option>
+                <option value="AC">AC</option>
+            </select> 
+            <br>
+            <button id="off-btn" class="btn">Turn Off</button>
+                <br>
+                <p id="thermostat-off-message"></p>
+        </div>  
+
+        <!-- update card --> 
+        <div class="card" id="thermostat-update" tabindex="0">
+            <h3>Update Temperature </h3>
+            <label for="device-select-update">Select Device:</label>
+            <select id="device-select-update" name="devices">
+                <option value="HEATER">Heater</option>
+                <option value="AC">AC</option>
+            </select> 
+
+            <label for="temperature-select-update">Temperature:</label>
+            <select id="temperature-select-update">
+                <!-- Options will be populated by JavaScript -->
+            </select> 
+            <br>   
+            <button id="update-btn" class="btn">Update</button>
+                <br>
+                <p id="thermostat-update-message"></p> 
+        </div> 
+    </div> 
+    
+</body> 
+</html> 
