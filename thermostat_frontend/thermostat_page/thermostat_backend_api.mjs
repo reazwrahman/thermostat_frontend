@@ -33,7 +33,7 @@ async function turn_thermostat_on(device, target_temperature){
         console.warn('force_device_on::Error fetching data from backend api:', error); 
         console.log("force_device_on(): using static json data");
        
-        data = post_thermostat_data; 
+        data = post_thermostat_data_on; 
         data.url = "static sample data";
     }   
     finally{  
@@ -55,7 +55,7 @@ function display_message_thermostat_on(data){
     let message = '';
     for (const key in data) {
         if (data.hasOwnProperty(key)) {
-            message = `${key}:  ${data[key]}`; 
+            message = `${key}: ${data[key]}`; 
             messageElement.innerHTML += message + "<br>"
         }
     }
