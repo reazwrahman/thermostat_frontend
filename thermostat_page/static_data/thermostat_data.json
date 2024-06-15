@@ -1,5 +1,6 @@
 {
     "ac_thread": "ON",
+    "current_temperature": 32.4,
     "target_temperature": 23.5,
     "thermo_thread": "OFF",
     "updated_on": "2024-06-12 09:06"

@@ -61,7 +61,14 @@ function display_device_data(data){
         <p>Last Turned ON at: ${data.last_turned_on}</p> 
         <p>Last Turned OFF at: ${data.last_turned_off}</p> 
         <p>Last Updated On: ${data.timestamp}</p> 
-    `;  
+    `;   
+
+    if (data.device_status == "ON"){ 
+        status_card.innerHTML += `<p>On for: ${data.on_for_minutes} minute(s)</p> `
+    } 
+    else{ 
+        status_card.innerHTML += `<p>Off for: ${data.off_for_minutes} minute(s)</p> `
+    };
 
     const sensor_card = document.getElementById("sensor-info-card");  
 
