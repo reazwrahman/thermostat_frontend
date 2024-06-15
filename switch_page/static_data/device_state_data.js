@@ -5,7 +5,9 @@ const device_state_data={
     "last_turned_off": "2024-05-26 21:57",
     "last_turned_on": "2024-05-26 21:59",
     "target_temperature": 23.5,
-    "timestamp": "2024-05-26 21:59"
+    "timestamp": "2024-05-26 21:59", 
+    "off_for_minutes": 11.79,
+    "on_for_minutes": 10.79
 };
 
 export {device_state_data};
