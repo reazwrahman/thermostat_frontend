@@ -1,33 +1,74 @@
 # Project Description
 
-Instead of creating a page for the portfolio, I have created a page from my proposed term project. As was communicated earlier via email, I am planning to build an UI for a DIY thermostat. This assignment seemed like a good starting point to start thinking about the term project.  
+Project context can be found at this link (published version of this site), 
+avoiding rewriting it here to maintain a single source of truth:  
+https://reazwrahman.github.io/thermostat_frontend/background_pages/context_page/index.html  
 
-I have fulfilled all the requirements asked in the assignment including a flexbox, grids and the styling specifications. However, the content of the page is related to my thermostat project. 
+Hardware Setup for some perspective: https://reazwrahman.github.io/thermostat_frontend/background_pages/hardware_page/index.html 
 
-## Instructions 
-- To run this locally using Python, navigate to the root directory on terminal 
-and run ```python3 -m http.server 8000 --bind 0.0.0.0 ``` 
-- Find the site on ```0.0.0.0:8000```
+## First Time Setup Instructions    
 
-## Backend API calls 
+You can run this site in two different ways: both options are described below.
 
-This assignment is intended to make 3 different API endpoint calls. First one is to the weather map api to get the current weather information. I have stubbed out the call for now, since there is a cap on how many calls I can make within the free tier. I will save those for the term project. 
+### VS Code Live Server  
 
-The other two calls are made to a locally hosted backend api running in Python. I have not included the api with this assignment, I am hoping to include that with my final project- it's still a very much work in progress. I will add an image in the zip file showing the successful API calls when running from my local setup (```assi3_local_run.png```). 
+Run the index.html found at the root directory of the Github Repo (```thermostat_frontend/index.html```)
 
-For all of the API calls, I have included static json data, in case the call fails the static data will be retrieved from the json files.  
+### Python Server  
 
-## General Comments 
+- VS Code Liver server is not an option for target hardware where the server 
+needs to be started from CLI.
 
-- This page is published on Github page, just FYI: https://reazwrahman.github.io/themostat_home_page_assi3/ 
+- To fix this problem, I have copied the index.html from the root directory and moved it one directory up (and changed a couple of the directory references). 
+If you are working off of a zip file, then you have this file structure already.
 
-- I have tested the page on different mobile devices through chrome's dev tool. I am pretty satisfied with how it looks on both desktop and mobile. 
+- Navigate one directory up from the root of the Github repo (aka: ..thermostat_frontend), and you should see a single index.html file there. 
 
-- All of the style requirements in the assignment are met, try doing global search in the style.css to look for something specific.
+- Make sure you have Python(3.x) installed 
 
-- It might be a little hard to find the attribute selector in the actual website. If you click on the logo in the navbar it will rotate to point towards the menu option - this is achieved with the attribute selector.    
+- Now run ```python3 -m http.server 8000 --bind 0.0.0.0 ```
 
-    - Also, selecting any text in the grid cells will highlight them, this is done with ::selection pseudo element. 
+- Find the site on ```http://0.0.0.0:8000``` or alternatively 
+```http://<your-ip>:8000```
 
-- I will appreciate some feedback on how to organize the javascript files in the codebase. I am expecting a lot more .mjs file for the term project. It would be nice to know the industry best practices to organize these files. 
 
+
+### Instructions for configs.js  
+
+- navigate to ```thermostat_frontend/configs.js``` file. You will have to make the following changes: 
+
+1) Provide a valid API Key for the weather api (if you are working from a zip file, 
+I have already provided it to you). 
+
+2) for const laptop_ip, provide your computer's ip address followed by 
+port 8080 (```<your-ip>:8080```). You can ignore the 
+raspberry_pi ip field. 
+NOTE: This step assumes that you already have (or will run) the backend API on another shell in your terminal. See the Backend API instruction section below.
+
+3) Make sure running mode is set to simulation and not target, look for this line: ```const MODE = RUNNING_MODES.SIM```
+
+
+## Running Modes of the Website
+
+This site is intended to run in 3 different modes: public mode, simulation mode and target mode. 
+
+```Public Mode```: This is the published site on the internet (https://reazwrahman.github.io/thermostat_frontend/). This mode does not require any backend API setup. You will see that all the backend data pipelines are stubbed with static
+json data located within the project directory. 
+
+While this mode is great for ease of access and viewing the UI of the site,
+it doesn't even begin to show the full power of this system. 
+
+```Simulation Mode```: This is the mode if you want to test the site on your local machine and want to fully appreciate the power of the site. I call this the simulation mode because it will run on your computer and doesn't need any 
+embedded hardware. There are built in simulated temperature sensor and simulated power relay to mimic the exact behavior of the embedded hardware setup. 
+
+To run this mode, you HAVE TO setup the backend API in parallel to running the
+frontend site. Please see the Backend API Setup section below. Setting up the backend can take as little as 5-10 minutes if you are somewhat familiar with Python package management.  
+
+```Target Mode```: This is basically the production equivalent of the site. It runs on actual hardware setup with a microprocessor, sensor and a power relay. It uses same backend API as the simulation mode. The endpoints are dynamically routed to the right place based on the target ip address and running mode defined in the Configs files.  
+
+
+## Backend API Setup 
+
+Run this api in a different shell in your terminal. The detailed instruction for the setup can be found on the README for that repository: https://github.com/reazwrahman/Thermostat_Backend_API/blob/master/README.md 
+
+If you are working off of a zip file, you can still follow all the instructions from the above readme, except for the ```git clone``` step since you already have the codebase in your local. 
