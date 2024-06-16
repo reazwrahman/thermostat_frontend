@@ -37,8 +37,7 @@ If you are working off of a zip file, then you have this file structure already.
 
 - navigate to ```thermostat_frontend/configs.js``` file. You will have to make the following changes: 
 
-1) Provide a valid API Key for the weather api (if you are working from a zip file, 
-I have already provided it to you). 
+1) Provide a valid API Key for the weather api (if you are working from a zip file, I have already provided it to you). 
 
 2) for const laptop_ip, provide your computer's ip address followed by 
 port 8080 (```<your-ip>:8080```). You can ignore the 
@@ -62,7 +61,7 @@ it doesn't even begin to show the full power of this system.
 embedded hardware. There are built in simulated temperature sensor and simulated power relay to mimic the exact behavior of the embedded hardware setup. 
 
 To run this mode, you HAVE TO setup the backend API in parallel to running the
-frontend site. Please see the Backend API Setup section below. Setting up the backend can take as little as 5-10 minutes if you are somewhat familiar with Python package management.  
+frontend site. Please see the Backend API Setup section below. Setting up the backend can take as little as 5 minutes if you are somewhat familiar with Python package management.  
 
 ```Target Mode```: This is basically the production equivalent of the site. It runs on actual hardware setup with a microprocessor, sensor and a power relay. It uses same backend API as the simulation mode. The endpoints are dynamically routed to the right place based on the target ip address and running mode defined in the Configs files.  
 
