@@ -67,7 +67,9 @@ function error_call_back(error) {
     // Handle potential geolocation errors (from previous examples)
     switch (error.code) {
         case error.PERMISSION_DENIED:
-            console.log("User denied geolocation permission.");
+            console.log("User denied geolocation permission."); 
+            console.log("Using preset location coordinates");
+            display_weather_card();
             break;
         case error.POSITION_UNAVAILABLE:
             console.log("Location information unavailable.");
