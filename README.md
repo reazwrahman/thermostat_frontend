@@ -26,16 +26,10 @@ If you are working off of a zip file, then you have this file structure already.
 
 - Make sure you have Python(3.x) installed 
 
-- Now run ```python3 -m http.server 8000 --bind 0.0.0.0 ```
+- Now run ```python3 -m http.server 3000 --bind 127.0.0.1 ```
 
-- Find the site on ```http://0.0.0.0:8000``` or alternatively 
-```http://<your-ip>:8000```
+- Find the site on ```http://127.0.0.1:3000/```
 
-#### Important Note to Keep in Mind
-
-I am using HTML5 Geolocation API for one of the homepage cards. I have noticed this particular behavior when running the server. If you run it with the first approach (VS Code Live Server), the browser will ask you if you want to allow location or will just allow it right away, depending on what the default is for your browser. 
-
-However, when running it with the second method (Python server), the browser automatically assumes the source to be not safe and prevents location sharing altogether. Therefore, with this method the weather card will use hardcoded location (NYC - where I am from) as opposed to your actual location. Something to keep in mind when running the site locally. 
 
 ### Instructions for configs.js  
 
