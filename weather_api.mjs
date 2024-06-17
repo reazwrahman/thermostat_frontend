@@ -8,19 +8,27 @@ const api_key = SECRETS.WEATHER_API_KEY;
 const LATITUDE = 40.683961 
 const LONGITUDE = -73.817874
  
-async function get_weather_info(latitude=LATITUDE, longitude=LONGITUDE) { 
+async function get_weather_info(latitude=LATITUDE, longitude=LONGITUDE) {  
+    let data;
     let card = document.getElementById("weather-card");
     const weather_api_url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${api_key}`;
     try {
         const response = await fetch(weather_api_url);
-        const data = await response.json(); 
+        data = await response.json(); 
         data.source = "Open Weather Map API"
+        if (latitude ==LATITUDE && longitude == LONGITUDE){ 
+            data.location_source = "User location inaccessible, using preset location";
+        } 
+        else{ 
+            data.location_source = "User location";
+        }
         return data;
     } catch (error) {
         console.warn('Error fetching weather data:', error); 
         const response = await fetch("./static_data/weather_data.json");  
         data = await response.json();  
-        data.source = "Unable to get response from Weather API, using sample static data";
+        data.source = "Unable to get response from Weather API, using sample static data"; 
+        data.location_source = "Sample static data"
         return data;
     }
 } 
@@ -41,6 +49,7 @@ async function display_weather_card(latitude, longitude, use_static_data = false
     try{
         const parsed_data = { 
             source: data.source, 
+            location_source: data.location_source, 
             location: data.name,
             temperature: data.main.temp,
             description: data.weather[0].description, 
@@ -50,7 +59,8 @@ async function display_weather_card(latitude, longitude, use_static_data = false
         
         card.innerHTML = `
             <h3>Weather Info</h3>   
-            <p>Source: ${parsed_data.source}</p>
+            <p>Source: ${parsed_data.source}</p> 
+            <p>Location Source: ${parsed_data.location_source}</p>
             <p>Location: ${parsed_data.location}</p> 
             <p>Description: ${parsed_data.description}</p> 
             <p>Temperature: ${parsed_data.temperature}°C</p>
