@@ -4,7 +4,17 @@ Project context can be found at this link (published version of this site),
 avoiding rewriting it here to maintain a single source of truth:  
 https://reazwrahman.github.io/thermostat_frontend/background_pages/context_page/index.html  
 
-Hardware Setup for some perspective: https://reazwrahman.github.io/thermostat_frontend/background_pages/hardware_page/index.html 
+Hardware Setup for some perspective: https://reazwrahman.github.io/thermostat_frontend/background_pages/hardware_page/index.html  
+
+## General Comments 
+
+- I have used React in non-build approach to create the navigation bar for the website. I found this to be an excellent use-case for React. Everytime I was making any change to the navbar, I had to copy-paste the same change across all of my pages. A reusable React component made a lot of sense for this. 
+
+- Youtube Link to the presentation: https://www.youtube.com/watch?v=SZcvlecOQ6Y 
+
+- Github Repo: https://github.com/reazwrahman/thermostat_frontend  
+
+- Backend API Repo: https://github.com/reazwrahman/Thermostat_Backend_API 
 
 ## First Time Setup Instructions    
 
@@ -20,9 +30,10 @@ Run the index.html found at the root directory of the Github Repo (```thermostat
 needs to be started from CLI.
 
 - To fix this problem, I have copied the index.html from the root directory and moved it one directory up (and changed a couple of the directory references). 
-If you are working off of a zip file, then you have this file structure already.
+This copy of index.html can be found in a folder called "backup" in the root directory. If you choose run the site with Python Server, you would have to copy the backup/index.html and paste in one directory above the the root(thermostat_frontend). Directory tree:
 
-- Navigate one directory up from the root of the Github repo (aka: ..thermostat_frontend), and you should see a single index.html file there. 
+>index.html  (run python server from here)
+>....thermostat_frotnend (git root directory)
 
 - Make sure you have Python(3.x) installed 
 
@@ -35,7 +46,7 @@ If you are working off of a zip file, then you have this file structure already.
 
 - navigate to ```thermostat_frontend/configs.js``` file. You will have to make the following changes: 
 
-1) Provide a valid API Key for the weather api (if you are working from a zip file, I have already provided it to you). 
+1) Provide a valid API Key for the weather api (included with the git repo). 
 
 2) for const laptop_ip, provide your computer's ip address followed by 
 port 8080 (```<your-ip>:8080```). You can ignore the 
@@ -66,6 +77,4 @@ frontend site. Please see the Backend API Setup section below. Setting up the ba
 
 ## Backend API Setup 
 
-Run this api in a different shell in your terminal. The detailed instruction for the setup can be found on the README for that repository: https://github.com/reazwrahman/Thermostat_Backend_API/blob/master/README.md 
-
-If you are working off of a zip file, you can still follow all the instructions from the above readme, except for the ```git clone``` step since you already have the codebase in your local. 
+Run this api in a different shell in your terminal. The detailed instruction for the setup can be found on the README for that repository: https://github.com/reazwrahman/Thermostat_Backend_API/blob/master/README.md  
