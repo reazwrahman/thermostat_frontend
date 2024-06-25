@@ -8,7 +8,7 @@ const MODE = RUNNING_MODES.SIM
 
 const SECRETS= { 
     WEATHER_API_KEY: "8a757115f1d5c68d542ff30473fdf820",
-    SWITCH_KEY: "90e96885-cb29-432d-8450-e018ab042114" 
+    SWITCH_KEY: "" 
 }
 
 const laptop_ip = "192.168.1.37:8080"; 
