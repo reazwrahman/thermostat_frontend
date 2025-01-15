@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
         temperatureSelectOn.appendChild(optOn);  
 
         const optUpdate = document.createElement('option');
-        optUpdate.value = i;
-        optUpdate.textContent = i;
+        optUpdate.value = Number(i.toFixed(2));
+        optUpdate.textContent = Number(i.toFixed(2));
         temperatureSelectUpdate.appendChild(optUpdate);
     }
 });
