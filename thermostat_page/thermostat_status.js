@@ -24,8 +24,9 @@ function display_thermostat_data(response){
     const health_card = document.getElementById("thermostat-status");  
     health_card.innerHTML = `
         <h3>Thermostat Status </h3>  
-        <p>Thermostat (Heater): ${response.thermo_thread}</p> 
-        <p>Thermostat (AC): ${response.ac_thread}</p>  
+        <p>Heater: ${response.thermo_thread}</p> 
+        <p>AC: ${response.ac_thread}</p>   
+        <p>FAN: ${response.fan_thread}</p>  
         <p>Current Temperature: ${response.current_temperature} °C</p>
         <p>Target Temperature: ${response.target_temperature} °C</p>  
         <p>Last Updated On: ${response.updated_on}</p>

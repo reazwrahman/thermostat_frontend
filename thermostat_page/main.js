@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const temperatureSelectOn = document.getElementById('temperature-select-on'); 
     const temperatureSelectUpdate = document.getElementById('temperature-select-update');
 
-    // Populate select with values from 10 to 35 in increments of 0.5
-    for (let i = 15; i <= 30; i += 0.2) {
+    // Populate select with values from x to y in increments of z
+    for (let i = 20; i <= 35; i += 0.2) {
         const optOn = document.createElement('option');
         optOn.value = Number(i.toFixed(2));
         optOn.textContent = Number(i.toFixed(2));
